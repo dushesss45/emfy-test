@@ -105,6 +105,7 @@ $app->configure('app');
 | can respond to, as well as the controllers that may handle them.
 |
 */
+$app->configure('amocrm');
 
 $app->router->group([
     'namespace' => 'App\Http\Controllers',

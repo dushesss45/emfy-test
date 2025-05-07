@@ -16,3 +16,5 @@
 $router->get('/', function () use ($router) {
     return $router->app->version();
 });
+$router->post('/hook', 'WebhookController@handle');
+$router->get('/oauth2', 'AuthController@callback');
